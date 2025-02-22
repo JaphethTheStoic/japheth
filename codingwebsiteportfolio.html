@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>theStoicPortfolio</title>
+        <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1opx;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.hero {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.projects img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width; 768px) {
+    #menu {
+        display: flex;
+        flex-direction: row;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.projects {
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+}
+
+        </style>
+
+        </head>
+        <body>
+            <header>
+                <button id="menu-toggle"></button>
+                <nav id="menu">
+                    <a href="">Home</a>
+                    <a href="">Services</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Portfolio</a>
+                </nav>
+            </header>
+
+            <section class="hero">
+                <h1>Hi, I'm JaceyyTheStoic</h1>
+                <p>A Developer & DJ</p>
+            </section>
+
+            <section class="projects">
+                <div class="projects">
+                    <img src="images/project1.jpg" width="200" height="200" alt="first image of coding content">
+                    <h3>Project 1</h3>
+                    <p>A cool coding project.</p>
+                    </div>
+                    <div class="projects">
+                        <img src="images/project2.jpg" width="200" height="200" alt="second image of coding content">
+                        <h3>Project 2</h3>
+                        <p>Another awesome project.</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; JaceyyTheStoic| </p>
+            </footer>
